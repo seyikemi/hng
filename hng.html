@@ -1,0 +1,106 @@
+<html doctype>
+<head>
+<title>Hng Internship</title>	
+</head>
+<body onload="startTime()">
+	<style type="text/css">
+		.backgroundimage{
+
+		
+		width: 100%;
+		height: 100%;
+		background-image: url(image.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		.backgroundmask{
+
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #463f3fa1;
+		}
+		.text{
+			
+			text-align: center;
+			margin:0 auto;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 62px;
+
+			color: #fff;
+		}
+		.text2{
+			
+			
+			text-align: center;
+			margin:0 auto;
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			line-height: normal;
+			font-size: 30px;
+			padding-top: 10px;
+			color: #F2C94C;
+			padding-bottom: 2%
+		}
+		.timestamp{
+
+		text-align: center;
+		margin:0 auto;
+
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		line-height: normal;
+		font-size: 30px;
+	
+		color: #000;
+		}
+		.box{
+
+		text-align: center;
+		margin:0 auto;
+		padding-top:15px;
+		width: 24%;
+		height: 10%;
+		
+		background: #C4C4C4;
+		}
+		.center{
+			padding-top: 17%;
+			text-align: center;
+			margin:0 auto;
+		}
+
+	</style>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+
+</script>
+	<div class = "backgroundimage">
+		<div class = "backgroundmask">
+			<div class  = "center">
+				<h3 class ="text">Hello, I am Seyikemi</h3>
+				<h5 class = "text2"> Welcome to HNG Internship 4</h5>
+				<div class = "box" id="txt" >
+					 <p class = "timestamp" >2018-04-11|6:25 am </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
